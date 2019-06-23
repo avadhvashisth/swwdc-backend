@@ -21,6 +21,7 @@ var { mongoose } = require('./db/mongoose');
 var { User } = require('./models/user');
 var { Contact } = require('./models/contact');
 var { Home } = require('./models/home');
+var { About } = require('./models/about');
 var { util } = require('./util');
 var { authenticate } = require('./middleware/authenticate');
 
@@ -98,9 +99,15 @@ app.post('/upload', upload.single('siteImage'), (req, res, next) => {
 });
 
 
-//site data apis 
+//home site data apis 
 app.put('/home',authenticate, (req, res) => {
-  var body = _.pick(req.body, ['top-h1-span1', 'top-h1-span2', 'top-h1-span3', 'top-p']);
+  var params = [
+    'top-h1-span1', 
+    'top-h1-span2', 
+    'top-h1-span3', 
+    'top-p'
+  ];
+  var body = _.pick(req.body, params);
 
   Home.update({ name: "home" }, body, null).then((doc) => {
     res.send(util.setResData(true, "Home data updated successfully"));
@@ -117,6 +124,29 @@ app.get('/home', (req, res) => {
   });
 });
 
+//about site data apis 
+app.put('/about',authenticate, (req, res) => {
+  var params = [
+    'section', 
+    'table', 
+    'footer',
+  ];
+  var body = _.pick(req.body, params);
+
+  Home.update({ name: "about" }, body, null).then((doc) => {
+    res.send(util.setResData(true, "About data updated successfully"));
+  }).catch((e) => {
+    res.status(400).send(util.setResData(false, "Error occured while updating about data"));
+  });
+});
+
+app.get('/about', (req, res) => {
+  Home.findOne({ name: "about" }, { _id: 0 }) .then((data) => {
+    res.send(data);
+  }, (e) => {
+    res.status(400).send(util.setResData(false, "Error occured while getting about data"));
+  });
+});
 
 app.listen(port, () => {
   console.log(`Server is up on PORT: ${port}`);
