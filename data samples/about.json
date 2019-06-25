@@ -1,0 +1,36 @@
+{"section": {
+    "type": {
+      "head1": "About Sahyog India™",
+      "head-content1": {
+        "p1": "Recycling is not an only a process to convert the waste into reusable products but it have bigger",
+        "p2": "With the mission of converting waste to wealth Green-O-Tech India was introduced",
+        "strong": "Ministry of Economy, Trade and Industry of Japan (METI) selected Sahyog India in",
+        "img": ""
+      },
+      "head-content2": {
+        "p1": "As small initiative stated in 2010 with a mission of “One Step towards Waste to Wealth”. After 8",
+        "p2": "The process of paper recycling can be categorised in like; firstly the papers collected from",
+        "img": ""
+      },
+      "head2": "What make us unique?",
+      "head-content3": {
+        "p": "We collect waste paper and Recyclethe same and convert into stationary products and these"
+      }
+    }
+  },
+  "table": {
+    "header": "Contribution for environment and society",
+    "data": [{"label": "Total Carbon saved", "value": "462420,000 kg"}]
+  },
+  "footer": {
+    "img": "",
+    "p": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    "useful-links": [{"link": "", "title": "Home"}, {"link": "", "title": "About"}],
+    "configuration": [{"link": "", "title": "Media"}, {"link": "", "title": "Contact"}],
+    "address": {
+      "l1": "Sector 56, Gurgaon, Haryana",
+      "l2": "+91 9876543210",
+      "l3": "sahyog@info.com"
+    }
+  }
+}

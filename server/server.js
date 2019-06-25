@@ -27,8 +27,6 @@ var { authenticate } = require('./middleware/authenticate');
 
 var app = express();
 var port = process.env.PORT || 4000;
-const SUCCESS = "success";
-const ERROR = "error"
 
 app.use(bodyParser.json());
 
@@ -133,7 +131,7 @@ app.put('/about',authenticate, (req, res) => {
   ];
   var body = _.pick(req.body, params);
 
-  Home.update({ name: "about" }, body, null).then((doc) => {
+  About.updateOne({ name: "about" }, body, null).then((doc) => {
     res.send(util.setResData(true, "About data updated successfully"));
   }).catch((e) => {
     res.status(400).send(util.setResData(false, "Error occured while updating about data"));
@@ -141,7 +139,7 @@ app.put('/about',authenticate, (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-  Home.findOne({ name: "about" }, { _id: 0 }) .then((data) => {
+  About.findOne({ name: "about" }, { _id: 0 }) .then((data) => {
     res.send(data);
   }, (e) => {
     res.status(400).send(util.setResData(false, "Error occured while getting about data"));
