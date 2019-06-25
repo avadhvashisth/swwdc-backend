@@ -131,7 +131,7 @@ app.put('/about',authenticate, (req, res) => {
   ];
   var body = _.pick(req.body, params);
 
-  About.updateOne({ name: "about" }, body, null).then((doc) => {
+  About.updateOne({ name: "about" }, body, { upsert: true }).then((doc) => {
     res.send(util.setResData(true, "About data updated successfully"));
   }).catch((e) => {
     res.status(400).send(util.setResData(false, "Error occured while updating about data"));
