@@ -1,0 +1,68 @@
+{
+  "heading": "Our Eco Product",
+  "container1": {
+    "h4": "Eco Office Stationery",
+    "col3": {
+      "img": "images/EcoOffice.jpg",
+      "button": "Download Catalogue"
+    },
+    "col9": {
+      "p1": "It’s very simple- why cut down Trees to make Paper, when it can be",
+      "p2": "We are one of leading Waste Recycling Service providing company in",
+      "p3": "We have widest range of <b>Corporate Diaries and Planners, Business Organizers, Leather Diaries and Spiral Diary.</b>",
+      "h4": "Adopt Recycle Paper Stationery under CSR",
+      "p4": "Green-O-Tech India’s Recycled Paper Stationery Products is already a",
+      "p5": "Through adopting Green-O-Tech India initiative we helps to recycle",
+      "P6": "We believes that everyone’s daily operations have an impact on the",
+      "h6": "How our products are deferent from Market:",
+      "ol": ["Manufactured with 100% Recycled Paper", "Used 100% Wood Free Raw Material"]
+    }
+  },
+  "container2": {
+    "h4": "Eco Office Stationery",
+    "col3": {
+      "img": "images/EcoOffice.jpg",
+      "button": "Download Catalogue"
+    },
+    "col9": {
+      "p1": "It’s very simple- why cut down Trees to make Paper, when it can be",
+      "p2": "We are one of leading Waste Recycling Service providing company in",
+      "p3": "We have widest range of <b>Corporate Diaries and Planners, Business Organizers, Leather Diaries and Spiral Diary.</b>",
+      "h4": "Adopt Recycle Paper Stationery under CSR",
+      "p4": "Green-O-Tech India’s Recycled Paper Stationery Products is already a",
+      "p5": "Through adopting Green-O-Tech India initiative we helps to recycle",
+      "P6": "We believes that everyone’s daily operations have an impact on the",
+      "h6": "How our products are deferent from Market:",
+      "ol": ["Manufactured with 100% Recycled Paper", "Used 100% Wood Free Raw Material"]
+    }
+  },
+  "container3": {
+    "h4": "Eco Office Stationery",
+    "col3": {
+      "img": "images/EcoOffice.jpg",
+      "button": "Download Catalogue"
+    },
+    "col9": {
+      "p1": "It’s very simple- why cut down Trees to make Paper, when it can be",
+      "p2": "We are one of leading Waste Recycling Service providing company in",
+      "p3": "We have widest range of <b>Corporate Diaries and Planners, Business Organizers, Leather Diaries and Spiral Diary.</b>",
+      "h4": "Adopt Recycle Paper Stationery under CSR",
+      "p4": "Green-O-Tech India’s Recycled Paper Stationery Products is already a",
+      "p5": "Through adopting Green-O-Tech India initiative we helps to recycle",
+      "P6": "We believes that everyone’s daily operations have an impact on the",
+      "h6": "How our products are deferent from Market:",
+      "ol": ["Manufactured with 100% Recycled Paper", "Used 100% Wood Free Raw Material"]
+    }
+  },
+  "footer": {
+    "img": "",
+    "p": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    "useful-links": [{"link": "", "title": "Home"}, {"link": "", "title": "About"}],
+    "configuration": [{"link": "", "title": "Media"}, {"link": "", "title": "Contact"}],
+    "address": {
+      "l1": "Sector 56, Gurgaon, Haryana",
+      "l2": "+91 9876543210",
+      "l3": "sahyog@info.com"
+    }
+  }
+}

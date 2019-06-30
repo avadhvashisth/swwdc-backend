@@ -8,7 +8,7 @@ var About = mongoose.model('About', {
     trim: true,
   },
   section: {
-    type: {
+    _type: {
       head1: String,
       "head-content1": {
         p1: String,

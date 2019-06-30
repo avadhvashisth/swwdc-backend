@@ -22,6 +22,9 @@ var { User } = require('./models/user');
 var { Contact } = require('./models/contact');
 var { Home } = require('./models/home');
 var { About } = require('./models/about');
+var { Product } = require('./models/product');
+var { Media } = require('./models/media');
+var { Services } = require('./models/services');
 var { util } = require('./util');
 var { authenticate } = require('./middleware/authenticate');
 
@@ -78,6 +81,7 @@ app.post('/contactmsg', (req, res) => {
   contact.save().then((doc) => {
     res.send(util.setResData(true, "Response sent."));
   }).catch((e) => {
+    console.log(e);
     res.status(400).send(util.setResData(false, "Some message required."));
   });
 });
@@ -122,6 +126,7 @@ app.get('/home', (req, res) => {
   });
 });
 
+
 //about site data apis 
 app.put('/about',authenticate, (req, res) => {
   var params = [
@@ -130,10 +135,11 @@ app.put('/about',authenticate, (req, res) => {
     'footer',
   ];
   var body = _.pick(req.body, params);
-
-  About.updateOne({ name: "about" }, body, { upsert: true }).then((doc) => {
+  
+  About.updateOne({ name: "about" }, body, { upsert: true, runValidators: true}).then((doc) => {
     res.send(util.setResData(true, "About data updated successfully"));
   }).catch((e) => {
+    console.log(e);
     res.status(400).send(util.setResData(false, "Error occured while updating about data"));
   });
 });
@@ -143,6 +149,83 @@ app.get('/about', (req, res) => {
     res.send(data);
   }, (e) => {
     res.status(400).send(util.setResData(false, "Error occured while getting about data"));
+  });
+});
+
+
+//product site data apis 
+app.put('/product',authenticate, (req, res) => {
+  var params = [
+    'heading', 
+    'container1',
+    'container2',
+    'container3',
+    'footer',
+  ];
+  var body = _.pick(req.body, params);
+
+  Product.updateOne({ name: "product" }, body, { upsert: true }).then((doc) => {
+    res.send(util.setResData(true, "Product data updated successfully"));
+  }).catch((e) => {
+    res.status(400).send(util.setResData(false, "Error occured while updating product data"));
+  });
+});
+
+app.get('/product', (req, res) => {
+  Product.findOne({ name: "product" }, { _id: 0 }) .then((data) => {
+    res.send(data);
+  }, (e) => {
+    res.status(400).send(util.setResData(false, "Error occured while getting product data"));
+  });
+});
+
+//media site data apis 
+app.put('/media',authenticate, (req, res) => {
+  var params = [
+    'heading', 
+    'images',
+    'footer',
+  ];
+  var body = _.pick(req.body, params);
+
+  Media.updateOne({ name: "media" }, body, { upsert: true }).then((doc) => {
+    res.send(util.setResData(true, "Media data updated successfully"));
+  }).catch((e) => {
+    res.status(400).send(util.setResData(false, "Error occured while updating media data"));
+  });
+});
+
+app.get('/media', (req, res) => {
+  Media.findOne({ name: "media" }, { _id: 0 }) .then((data) => {
+    res.send(data);
+  }, (e) => {
+    res.status(400).send(util.setResData(false, "Error occured while getting media data"));
+  });
+});
+
+//services site data apis 
+app.put('/services',authenticate, (req, res) => {
+  var params = [
+    'heading', 
+    'container1',
+    'container2',
+    'container3',
+    'footer',
+  ];
+  var body = _.pick(req.body, params);
+
+  Services.updateOne({ name: "services" }, body, { upsert: true }).then((doc) => {
+    res.send(util.setResData(true, "Services data updated successfully"));
+  }).catch((e) => {
+    res.status(400).send(util.setResData(false, "Error occured while updating services data"));
+  });
+});
+
+app.get('/services', (req, res) => {
+  Services.findOne({ name: "services" }, { _id: 0 }) .then((data) => {
+    res.send(data);
+  }, (e) => {
+    res.status(400).send(util.setResData(false, "Error occured while getting services data"));
   });
 });
 
