@@ -25,8 +25,8 @@ var Services = mongoose.model('Services', {
     "head-content3": [String],
     head4: String,
     "head-content4": [String],
-    head4: String,
-    "head-content4": [String]
+    head5: String,
+    "head-content5": [String]
   },
   container2: {
     head1: String,
@@ -45,8 +45,8 @@ var Services = mongoose.model('Services', {
     "head-content3": [String],
     head4: String,
     "head-content4": [String],
-    head4: String,
-    "head-content4": [String]
+    head5: String,
+    "head-content5": [String]
   },
   container3: {
     head1: String,
@@ -65,8 +65,8 @@ var Services = mongoose.model('Services', {
     "head-content3": [String],
     head4: String,
     "head-content4": [String],
-    head4: String,
-    "head-content4": [String]
+    head5: String,
+    "head-content5": [String]
   },
   footer: {
     img: String,

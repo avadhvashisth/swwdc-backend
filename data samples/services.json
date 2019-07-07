@@ -1,0 +1,75 @@
+{
+  "name": "services",
+  "heading": "Services",
+  "container1": {
+    "head1": "Waste Paper Recycling:",
+    "head-content1": {
+      "p1": "Sahyog India is one of leading service provider for waste paper recycling in India.",
+      "p2": "The process of paper recycling can be categorised in like; firstly the papers collected from",
+      "img": "images/contact.jpg"
+    },
+    "head2": "Sahyog India Service Model:",
+    "head-content2": {
+      "p1": "Sahyog India is one of leading service provider for waste paper recycling in India.",
+      "p2": "The process of paper recycling can be categorised in like; firstly the papers collected from",
+      "img": "images/contact.jpg"
+    },
+    "head3": "There are seven major reasons for adopting Green-O-Tech India’s Waste Paper Recycling initiative:",
+    "head-content3": ["Waste Paper Recycling Helps the Environment.", "Recycling paper is economically responsible."],
+    "head4": "Environmental and Social impact of Waste Paper Recycling initiative:",
+    "head-content4": ["Waste Paper Recycling Helps the Environment.", "Recycling paper is economically responsible."],
+    "head5": "Major 3 Benefits for corporate by adopting this Service Model for Paper Recycling:",
+    "head-content5": ["Waste Paper Recycling Helps the Environment.", "Recycling paper is economically responsible."]
+  },
+  "container2": {
+    "head1": "Waste Paper Recycling:",
+    "head-content1": {
+      "p1": "Sahyog India is one of leading service provider for waste paper recycling in India.",
+      "p2": "The process of paper recycling can be categorised in like; firstly the papers collected from",
+      "img": "images/contact.jpg"
+    },
+    "head2": "Sahyog India Service Model:",
+    "head-content2": {
+      "p1": "Sahyog India is one of leading service provider for waste paper recycling in India.",
+      "p2": "The process of paper recycling can be categorised in like; firstly the papers collected from",
+      "img": "images/contact.jpg"
+    },
+    "head3": "There are seven major reasons for adopting Green-O-Tech India’s Waste Paper Recycling initiative:",
+    "head-content3": ["Waste Paper Recycling Helps the Environment.", "Recycling paper is economically responsible."],
+    "head4": "Environmental and Social impact of Waste Paper Recycling initiative:",
+    "head-content4": ["Waste Paper Recycling Helps the Environment.", "Recycling paper is economically responsible."],
+    "head5": "Major 3 Benefits for corporate by adopting this Service Model for Paper Recycling:",
+    "head-content5": ["Waste Paper Recycling Helps the Environment.", "Recycling paper is economically responsible."]
+  },
+  "container3": {
+    "head1": "Waste Paper Recycling:",
+    "head-content1": {
+      "p1": "Sahyog India is one of leading service provider for waste paper recycling in India.",
+      "p2": "The process of paper recycling can be categorised in like; firstly the papers collected from",
+      "img": "images/contact.jpg"
+    },
+    "head2": "Sahyog India Service Model:",
+    "head-content2": {
+      "p1": "Sahyog India is one of leading service provider for waste paper recycling in India.",
+      "p2": "The process of paper recycling can be categorised in like; firstly the papers collected from",
+      "img": "images/contact.jpg"
+    },
+    "head3": "There are seven major reasons for adopting Green-O-Tech India’s Waste Paper Recycling initiative:",
+    "head-content3": ["Waste Paper Recycling Helps the Environment.", "Recycling paper is economically responsible."],
+    "head4": "Environmental and Social impact of Waste Paper Recycling initiative:",
+    "head-content4": ["Waste Paper Recycling Helps the Environment.", "Recycling paper is economically responsible."],
+    "head5": "Major 3 Benefits for corporate by adopting this Service Model for Paper Recycling:",
+    "head-content5": ["Waste Paper Recycling Helps the Environment.", "Recycling paper is economically responsible."]
+  },
+  "footer": {
+    "img": "",
+    "p": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    "useful-links": [{"link": "", "title": "Home"}, {"link": "", "title": "About"}],
+    "configuration": [{"link": "", "title": "Media"}, {"link": "", "title": "Contact"}],
+    "address": {
+      "l1": "Sector 56, Gurgaon, Haryana",
+      "l2": "+91 9876543210",
+      "l3": "sahyog@info.com"
+    }
+  }
+}

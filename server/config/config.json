@@ -6,7 +6,7 @@
   },
   "development": {
     "PORT": 3000,
-    "MONGODB_URI": "mongodb://Ganesh:avadh.5868@ds113906.mlab.com:13906/firstnodejs",
+    "MONGODB_URI": "mongodb://superuser:12345678@127.0.0.1:27017/swwdc?authSource=admin",
     "JWT_SECRET": "dasfhjeijnc67dsn"
   },
   "production": {
