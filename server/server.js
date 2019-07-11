@@ -112,14 +112,16 @@ app.post('/upload', upload.single('siteImage'), (req, res, next) => {
 //home site data apis 
 app.put('/home',authenticate, (req, res) => {
   var params = [
-    'top-h1-span1', 
-    'top-h1-span2', 
-    'top-h1-span3', 
-    'top-p'
+    'top-container',
+    'container1',
+    'container2',
+    'container3',
+    'container4',
+    'footer'
   ];
   var body = _.pick(req.body, params);
 
-  Home.update({ name: "home" }, body, null).then((doc) => {
+  Home.updateOne({ name: "home" }, body, { upsert: true, runValidators: true}).then((doc) => {
     res.send(util.setResData(true, "Home data updated successfully"));
   }).catch((e) => {
     res.status(400).send(util.setResData(false, "Error occured while updating home data"));

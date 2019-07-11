@@ -1,0 +1,77 @@
+{
+  "name": "home",
+  "top-container": {
+    "h1": {
+      "span1": "Design,",
+      "span2": "Development,",
+      "span3": "Hosting",
+      "p": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    }
+  },
+  "container1": {
+    "heading": "About Us",
+    "img": "",
+    "content1": {
+      "heading": "What we do",
+      "p1": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
+      "p2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur"
+    },
+    "content2": {
+      "heading": "Our mission",
+      "p1": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
+      "p2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur"
+    },
+    "content3": {
+      "heading": "Our goal",
+      "p1": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
+      "p2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur"
+    }
+  },
+  "container2": {
+    "heading": "More than 12,000 websites trusted hosted",
+    "content1": {
+      "data-number": "12000",
+      "span": "CMS Installation"
+    },
+    "content2": {
+      "data-number": "100",
+      "span": "Awards Won"
+    },
+    "content3": {
+      "data-number": "10000",
+      "span": "Registered Domains"
+    },
+    "content4": {
+      "data-number": "9000",
+      "span": "Satisfied Customers"
+    }
+  },
+  "container3": {
+    "heading": "Your Question",
+    "questions": [
+      {
+        "question": "What is your domain name?", 
+        "answer": "When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way."
+      },
+      {
+        "question": "How long is my domain name valid?", 
+        "answer": "When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way."
+      }
+      ]
+  },
+  "container4": {
+    "heading": "Contact Us",
+    "map-url": "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14036.991140771775!2d77.0449213980283!3d28.411779240169537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smap!5e0!3m2!1sen!2sin!4v1559872770163!5m2!1sen!2sin"
+  },
+  "footer": {
+    "img": "",
+    "p": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    "useful-links": [{"link": "", "title": "Home"}, {"link": "", "title": "About"}],
+    "configuration": [{"link": "", "title": "Media"}, {"link": "", "title": "Contact"}],
+    "address": {
+      "l1": "Sector 56, Gurgaon, Haryana",
+      "l2": "+91 9876543210",
+      "l3": "sahyog@info.com"
+    }
+  }
+}
