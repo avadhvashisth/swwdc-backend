@@ -11,15 +11,29 @@ const storage = multer.diskStorage({
     cb(null, 'uploads/');
   },
   filename: function(req, file, cb){
-    cb(null, new Date().getTime() + file.originalname)
+    let ext = file.originalname.slice(file.originalname.lastIndexOf('.'))
+    let name = req.body.name;
+    cb(null, name+ext);
   }
 });
 
-const upload = multer({storage: storage});
+const upload = multer({
+  storage: storage,
+  limits: {
+    fileSize: 1024 * 1024 * 5
+  },
+  fileFilter: function(req, file, cb) {
+    if(!req.body.name)
+      cb(null, false);
+    else
+      cb(null, true);
+  }
+});
 
 var { mongoose } = require('./db/mongoose');
 var { User } = require('./models/user');
 var { Contact } = require('./models/contact');
+var { ContactUs } = require('./models/contact-us');
 var { Home } = require('./models/home');
 var { About } = require('./models/about');
 var { Product } = require('./models/product');
@@ -39,6 +53,7 @@ app.use(function(req, res, next) {
 
 var port = process.env.PORT || 4000;
 
+app.use('/uploads', express.static('uploads'));
 app.use(bodyParser.json());
 
 
@@ -103,9 +118,13 @@ app.get('/contactmsgs', authenticate, (req, res) => {
 });
 
 
-//image upload apis -------incomplete
-app.post('/upload', upload.single('siteImage'), (req, res, next) => {
+//image upload apis
+app.post('/upload', authenticate, upload.single('siteImage'), (req, res, next) => {
   console.log(req.file);
+  if(req.body.name)
+    res.send(util.setResData(true, req.body.name + " updated successfully"));
+  else
+    res.status(400).send(util.setResData(false, "Name not provided."));
 });
 
 
@@ -236,6 +255,30 @@ app.get('/services', (req, res) => {
     res.send(data);
   }, (e) => {
     res.status(400).send(util.setResData(false, "Error occured while getting services data"));
+  });
+});
+
+//contactus site data apis 
+app.put('/contactus',authenticate, (req, res) => {
+  var params = [
+    'map-url',
+    'heading',
+    'footer',
+  ];
+  var body = _.pick(req.body, params);
+
+  ContactUs.updateOne({ name: "contactus" }, body, { upsert: true }).then((doc) => {
+    res.send(util.setResData(true, "ContactUs data updated successfully"));
+  }).catch((e) => {
+    res.status(400).send(util.setResData(false, "Error occured while updating contactus data"));
+  });
+});
+
+app.get('/contactus', (req, res) => {
+  ContactUs.findOne({ name: "contactus" }, { _id: 0 }) .then((data) => {
+    res.send(data);
+  }, (e) => {
+    res.status(400).send(util.setResData(false, "Error occured while getting contactus data"));
   });
 });
 
