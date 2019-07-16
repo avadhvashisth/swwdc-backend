@@ -6,6 +6,7 @@ var Home = mongoose.model('Home', {
     required: true,
   },
   "top-container": {
+    img: String,
     h1: {
       span1: String,
       span2: String,

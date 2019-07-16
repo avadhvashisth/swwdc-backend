@@ -1,6 +1,7 @@
 {
   "name": "home",
   "top-container": {
+    "img": "http://localhost:3000/uploads/home-top-container",
     "h1": {
       "span1": "Design,",
       "span2": "Development,",
@@ -10,7 +11,7 @@
   },
   "container1": {
     "heading": "About Us",
-    "img": "",
+    "img": "http://localhost:3000/uploads/home-container1",
     "content1": {
       "heading": "What we do",
       "p1": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
@@ -64,7 +65,7 @@
     "map-url": "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14036.991140771775!2d77.0449213980283!3d28.411779240169537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smap!5e0!3m2!1sen!2sin!4v1559872770163!5m2!1sen!2sin"
   },
   "footer": {
-    "img": "",
+    "img": "http://localhost:3000/uploads/footer-logo",
     "p": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
     "useful-links": [{"link": "", "title": "Home"}, {"link": "", "title": "About"}],
     "configuration": [{"link": "", "title": "Media"}, {"link": "", "title": "Contact"}],

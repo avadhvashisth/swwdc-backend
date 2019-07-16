@@ -6,13 +6,13 @@
     "head-content1": {
       "p1": "Sahyog India is one of leading service provider for waste paper recycling in India.",
       "p2": "The process of paper recycling can be categorised in like; firstly the papers collected from",
-      "img": "images/contact.jpg"
+      "img": "images/services-container1-hc1"
     },
     "head2": "Sahyog India Service Model:",
     "head-content2": {
       "p1": "Sahyog India is one of leading service provider for waste paper recycling in India.",
       "p2": "The process of paper recycling can be categorised in like; firstly the papers collected from",
-      "img": "images/contact.jpg"
+      "img": "images/services-container1-hc2"
     },
     "head3": "There are seven major reasons for adopting Green-O-Tech India’s Waste Paper Recycling initiative:",
     "head-content3": ["Waste Paper Recycling Helps the Environment.", "Recycling paper is economically responsible."],
@@ -26,13 +26,13 @@
     "head-content1": {
       "p1": "Sahyog India is one of leading service provider for waste paper recycling in India.",
       "p2": "The process of paper recycling can be categorised in like; firstly the papers collected from",
-      "img": "images/contact.jpg"
+      "img": "images/services-container2-hc1"
     },
     "head2": "Sahyog India Service Model:",
     "head-content2": {
       "p1": "Sahyog India is one of leading service provider for waste paper recycling in India.",
       "p2": "The process of paper recycling can be categorised in like; firstly the papers collected from",
-      "img": "images/contact.jpg"
+      "img": "images/services-container2-hc2"
     },
     "head3": "There are seven major reasons for adopting Green-O-Tech India’s Waste Paper Recycling initiative:",
     "head-content3": ["Waste Paper Recycling Helps the Environment.", "Recycling paper is economically responsible."],
@@ -46,13 +46,13 @@
     "head-content1": {
       "p1": "Sahyog India is one of leading service provider for waste paper recycling in India.",
       "p2": "The process of paper recycling can be categorised in like; firstly the papers collected from",
-      "img": "images/contact.jpg"
+      "img": "images/services-container3-hc1"
     },
     "head2": "Sahyog India Service Model:",
     "head-content2": {
       "p1": "Sahyog India is one of leading service provider for waste paper recycling in India.",
       "p2": "The process of paper recycling can be categorised in like; firstly the papers collected from",
-      "img": "images/contact.jpg"
+      "img": "images/services-container3-hc2"
     },
     "head3": "There are seven major reasons for adopting Green-O-Tech India’s Waste Paper Recycling initiative:",
     "head-content3": ["Waste Paper Recycling Helps the Environment.", "Recycling paper is economically responsible."],
@@ -62,7 +62,7 @@
     "head-content5": ["Waste Paper Recycling Helps the Environment.", "Recycling paper is economically responsible."]
   },
   "footer": {
-    "img": "",
+    "img": "http://localhost:3000/uploads/footer-logo",
     "p": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
     "useful-links": [{"link": "", "title": "Home"}, {"link": "", "title": "About"}],
     "configuration": [{"link": "", "title": "Media"}, {"link": "", "title": "Contact"}],

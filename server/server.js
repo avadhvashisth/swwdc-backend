@@ -5,6 +5,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const { ObjectID } = require('mongodb');
 const multer = require('multer');
+const fs = require('fs');
+var path = require('path');
 
 const storage = multer.diskStorage({
   destination: function(req, file, cb){
@@ -127,6 +129,16 @@ app.post('/upload', authenticate, upload.single('siteImage'), (req, res, next) =
     res.status(400).send(util.setResData(false, "Name not provided."));
 });
 
+app.get('/uploads/:name', (req, res) => {
+  fs.readdir('uploads/', function(err, items) {
+    for (var i=0; i<items.length; i++) {
+      if(items[i].includes(req.params.name)){
+        console.log(req.params.name);
+        res.sendFile(path.join(__dirname, '../uploads', items[i]));
+      }
+    }
+  });
+});
 
 //home site data apis 
 app.put('/home',authenticate, (req, res) => {
@@ -159,6 +171,7 @@ app.get('/home', (req, res) => {
 //about site data apis 
 app.put('/about',authenticate, (req, res) => {
   var params = [
+    'header',
     'section', 
     'table', 
     'footer',

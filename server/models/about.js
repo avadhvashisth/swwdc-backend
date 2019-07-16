@@ -7,6 +7,10 @@ var About = mongoose.model('About', {
     minlength: 1,
     trim: true,
   },
+  header: {
+    name: String,
+    img: String
+  },
   section: {
     _type: {
       head1: String,

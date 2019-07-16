@@ -3,7 +3,7 @@
   "container1": {
     "h4": "Eco Office Stationery",
     "col3": {
-      "img": "images/EcoOffice.jpg",
+      "img": "http://localhost:3000/uploads/product-container1",
       "button": "Download Catalogue"
     },
     "col9": {
@@ -21,7 +21,7 @@
   "container2": {
     "h4": "Eco Office Stationery",
     "col3": {
-      "img": "images/EcoOffice.jpg",
+      "img": "http://localhost:3000/uploads/product-container2",
       "button": "Download Catalogue"
     },
     "col9": {
@@ -39,7 +39,7 @@
   "container3": {
     "h4": "Eco Office Stationery",
     "col3": {
-      "img": "images/EcoOffice.jpg",
+      "img": "http://localhost:3000/uploads/product-container3",
       "button": "Download Catalogue"
     },
     "col9": {
@@ -55,7 +55,7 @@
     }
   },
   "footer": {
-    "img": "",
+    "img": "http://localhost:3000/uploads/footer-logo",
     "p": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
     "useful-links": [{"link": "", "title": "Home"}, {"link": "", "title": "About"}],
     "configuration": [{"link": "", "title": "Media"}, {"link": "", "title": "Contact"}],
