@@ -2,7 +2,7 @@
   "name": "about",
   "header": {
     "name": "ABOUT US",
-    "img": "http://localhost:3000/uploads/about-header"
+    "img": "https://whispering-hamlet-44736.herokuapp.com/uploads/about-header"
   },
   "section": {
     "_type": {
@@ -11,12 +11,12 @@
         "p1": "Recycling is not an only a process to convert the waste into reusable products but it have bigger",
         "p2": "With the mission of converting waste to wealth Green-O-Tech India was introduced",
         "strong": "Ministry of Economy, Trade and Industry of Japan (METI) selected Sahyog India in",
-        "img": "http://localhost:3000/uploads/about-section-type-hc1"
+        "img": "https://whispering-hamlet-44736.herokuapp.com/uploads/about-section-type-hc1"
       },
       "head-content2": {
         "p1": "As small initiative stated in 2010 with a mission of “One Step towards Waste to Wealth”. After 8",
         "p2": "The process of paper recycling can be categorised in like; firstly the papers collected from",
-        "img": "http://localhost:3000/uploads/about-section-type-hc2"
+        "img": "https://whispering-hamlet-44736.herokuapp.com/uploads/about-section-type-hc2"
       },
       "head2": "What make us unique?",
       "head-content3": {
@@ -29,7 +29,7 @@
     "data": [{"label": "Total Carbon saved", "value": "462420,000 kg"}]
   },
   "footer": {
-    "img": "http://localhost:3000/uploads/footer-logo",
+    "img": "https://whispering-hamlet-44736.herokuapp.com/uploads/footer-logo",
     "p": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
     "useful-links": [{"link": "", "title": "Home"}, {"link": "", "title": "About"}],
     "configuration": [{"link": "", "title": "Media"}, {"link": "", "title": "Contact"}],
