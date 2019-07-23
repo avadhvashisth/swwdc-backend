@@ -141,6 +141,89 @@ app.get('/uploads/:name', (req, res) => {
   });
 });
 
+//Add media
+app.post('/mediaimage', authenticate, upload.single('siteImage'), (req, res, next) => {
+  console.log(req.file);
+  var fullUrl = req.protocol + '://' + req.get('host');
+  console.log(fullUrl);
+  Media.findOne({ name: "media" }).then((media) => {
+    if(media){
+      if(media.images && Array.isArray(media.images)){
+        media.images.push({
+          name: req.body.name,
+          url: fullUrl + '/' +req.file.path,
+          category: req.body.category
+        });
+        media.save(function(err) {
+          if (err) {
+            res.status(400).send(util.setResData(false, "unable to add images"));
+          }
+            res.send(util.setResData(true, req.body.name + " updated successfully"));
+        });
+      }else{
+        media.images = {
+          name: req.body.name,
+          url: fullUrl + '/' + req.file.path,
+          category: req.body.category
+        };
+      }
+    }else{
+      res.status(400).send(util.setResData(false, "unable to add images"));
+    }
+  });
+});
+
+app.delete('/mediaimage/:id', authenticate, (req, res, next) => {
+  Media.findOne({ name: "media" }).then((media) => {
+    if(media && media.images && Array.isArray(media.images)){
+      for (var i = 0; i < media.images.length; i++) {
+        var obj = media.images[i];
+        if (obj._id == req.params.id) {
+        console.log("dfssssssssss");
+
+          media.images.splice(i, 1);
+        }
+      }
+      console.log(media.images);
+      
+      media.save(function(err) {
+        if (err) {
+          res.status(400).send(util.setResData(false, "unable to delete image"));
+        }
+          res.send(util.setResData(true, "deleted successfully"));
+      });
+    }else{
+      res.status(400).send(util.setResData(false, "unable to delete images"));
+    }
+  });
+});
+
+
+app.put('/media',authenticate, (req, res) => {
+  var params = [
+    'images',
+    'heading',
+    'footer',
+  ];
+  var body = _.pick(req.body, params);
+  
+  Media.updateOne({ name: "media" }, body, { upsert: true, runValidators: true}).then((doc) => {
+    res.send(util.setResData(true, "Media data updated successfully"));
+  }).catch((e) => {
+    console.log(e);
+    res.status(400).send(util.setResData(false, "Error occured while updating media data"));
+  });
+});
+
+app.get('/media', (req, res) => {
+  Media.findOne({ name: "media" }, { _id: 0 }) .then((data) => {
+    res.send(data);
+  }, (e) => {
+    res.status(400).send(util.setResData(false, "Error occured while getting media data"));
+  });
+});
+
+
 //home site data apis 
 app.put('/home',authenticate, (req, res) => {
   var params = [
