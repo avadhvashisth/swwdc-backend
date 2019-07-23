@@ -179,8 +179,6 @@ app.delete('/mediaimage/:id', authenticate, (req, res, next) => {
       for (var i = 0; i < media.images.length; i++) {
         var obj = media.images[i];
         if (obj._id == req.params.id) {
-        console.log("dfssssssssss");
-
           media.images.splice(i, 1);
         }
       }
