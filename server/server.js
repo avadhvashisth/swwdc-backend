@@ -132,11 +132,18 @@ app.post('/upload', authenticate, upload.single('siteImage'), (req, res, next) =
 
 app.get('/uploads/:name', (req, res) => {
   fs.readdir('uploads/', function(err, items) {
-    for (var i=0; i<items.length; i++) {
-      if(items[i].includes(req.params.name)){
-        console.log(req.params.name);
-        res.sendFile(path.join(__dirname, '../uploads', items[i]));
+    if(err){
+      res.status(400).send(err);
+      console.log(err);
+    }else{
+      for (var i=0; i<items.length; i++) {
+        if(items[i].includes(req.params.name)){
+          console.log(req.params.name);
+          res.sendFile(path.join(__dirname, '../uploads', items[i]));
+        }
       }
+      console.log("nodata");
+      res.status(400).send("not found");
     }
   });
 });
