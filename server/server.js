@@ -139,10 +139,10 @@ app.get('/uploads/:name', (req, res) => {
       for (var i=0; i<items.length; i++) {
         if(items[i].includes(req.params.name)){
           console.log(req.params.name);
+          console.log(path.join(__dirname, '../uploads', items[i]));
           res.sendFile(path.join(__dirname, '../uploads', items[i]));
         }
       }
-      console.log("nodata");
       res.status(400).send("not found");
     }
   });
