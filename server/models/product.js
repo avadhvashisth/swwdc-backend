@@ -7,6 +7,10 @@ var Product = mongoose.model('Product', {
     minlength: 1,
     trim: true,
   },
+  header: {
+    name: String,
+    img: String
+  },
   heading: String,
   container1: {
     h4: String,

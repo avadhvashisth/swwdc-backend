@@ -1,6 +1,10 @@
 {
 	"name": "contactus",
     "heading": "contact",
+    "header": {
+        "name": "contact",
+        "img": "https://whispering-hamlet-44736.herokuapp.com/uploads/contact-header"
+    },
     "map-url": "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14036.991140771775!2d77.0449213980283!3d28.411779240169537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smap!5e0!3m2!1sen!2sin!4v1559872770163!5m2!1sen!2sin",
     "footer": {
         "img": "https://whispering-hamlet-44736.herokuapp.com/uploads/footer-logo",

@@ -7,6 +7,10 @@ var Services = mongoose.model('Services', {
     minlength: 1,
     trim: true,
   },
+  header: {
+    name: String,
+    img: String
+  },
   heading: String,
   container1: {
     head1: String,

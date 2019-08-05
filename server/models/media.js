@@ -7,6 +7,10 @@ var Media = mongoose.model('Media', {
     minlength: 1,
     trim: true,
   },
+  header: {
+    name: String,
+    img: String
+  },
   heading: String,
   images: [{name: String, url: String, category: String}],
   footer: {

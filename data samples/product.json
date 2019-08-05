@@ -1,5 +1,9 @@
 {
   "heading": "Our Eco Product",
+  "header": {
+    "name": "Our Eco Product",
+    "img": "https://whispering-hamlet-44736.herokuapp.com/uploads/product-header"
+  },
   "container1": {
     "h4": "Eco Office Stationery",
     "col3": {

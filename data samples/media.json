@@ -1,6 +1,10 @@
 {
   "name": "media",
   "heading": "Gallery",
+  "header": {
+    "name": "Gallery",
+    "img": "https://whispering-hamlet-44736.herokuapp.com/uploads/media-header"
+  },
   "images": [{"name": "", "url": "", "category": ""}],
   "footer": {
     "img": "https://whispering-hamlet-44736.herokuapp.com/uploads/footer-logo",

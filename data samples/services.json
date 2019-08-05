@@ -1,6 +1,10 @@
 {
   "name": "services",
   "heading": "Services",
+  "header": {
+    "name": "Services",
+    "img": "https://whispering-hamlet-44736.herokuapp.com/uploads/services-header"
+  },
   "container1": {
     "head1": "Waste Paper Recycling:",
     "head-content1": {

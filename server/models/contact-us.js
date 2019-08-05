@@ -7,6 +7,10 @@ var ContactUs = mongoose.model('ContactUs', {
     minlength: 1,
     trim: true,
   },
+  header: {
+    name: String,
+    img: String
+  },
   heading: String,
   "map-url": String,
   footer: {
