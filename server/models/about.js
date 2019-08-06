@@ -40,6 +40,7 @@ var About = mongoose.model('About', {
     p: String,
     "useful-links": [{link: String, title: String}],
     configuration: [{link: String, title: String}],
+    "social-links": [{link: String, title: String}],
     address: {
       l1: String,
       l2: String,

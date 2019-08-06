@@ -63,6 +63,7 @@ var Home = mongoose.model('Home', {
   footer: {
     img: String,
     p: String,
+    "social-links": [{link: String, title: String}],
     "useful-links": [{link: String, title: String}],
     configuration: [{link: String, title: String}],
     address: {

@@ -17,6 +17,7 @@ var ContactUs = mongoose.model('ContactUs', {
     img: String,
     p: String,
     "useful-links": [{link: String, title: String}],
+    "social-links": [{link: String, title: String}],
     configuration: [{link: String, title: String}],
     address: {
       l1: String,

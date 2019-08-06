@@ -200,6 +200,7 @@ app.delete('/mediaimage/:id', authenticate, (req, res, next) => {
 app.put('/media',authenticate, (req, res) => {
   var params = [
     'images',
+    'header',
     'heading',
     'footer',
   ];
@@ -282,6 +283,7 @@ app.put('/product',authenticate, (req, res) => {
   var params = [
     'heading', 
     'container1',
+    'header',
     'container2',
     'container3',
     'footer',
@@ -332,6 +334,7 @@ app.put('/services',authenticate, (req, res) => {
   var params = [
     'heading', 
     'container1',
+    'header',
     'container2',
     'container3',
     'footer',
@@ -358,6 +361,7 @@ app.put('/contactus',authenticate, (req, res) => {
   var params = [
     'map-url',
     'heading',
+    'header',
     'footer',
   ];
   var body = _.pick(req.body, params);
