@@ -142,7 +142,7 @@ app.get('/uploads/:name', (req, res) => {
 });
 
 //Add media
-app.post('/mediaimage', authenticate, upload.single('siteImage'), (req, res, next) => {
+app.post('/mediaimage', authenticate, (req, res, next) => {
   console.log(req.file);
   var fullUrl = req.protocol + '://' + req.get('host');
   console.log(fullUrl);
@@ -151,7 +151,7 @@ app.post('/mediaimage', authenticate, upload.single('siteImage'), (req, res, nex
       if(media.images && Array.isArray(media.images)){
         media.images.push({
           name: req.body.name,
-          url: fullUrl + '/' +req.file.path,
+          url: req.body.url,
           category: req.body.category
         });
         media.save(function(err) {
@@ -163,7 +163,7 @@ app.post('/mediaimage', authenticate, upload.single('siteImage'), (req, res, nex
       }else{
         media.images = {
           name: req.body.name,
-          url: fullUrl + '/' + req.file.path,
+          url: req.body.url,
           category: req.body.category
         };
       }
